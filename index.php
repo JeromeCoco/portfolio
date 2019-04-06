@@ -1,1 +1,11 @@
-Test
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Jerome Coco | Portfolio</title>
+	</head>
+	<body>
+		Test
+	</body>
+</html>
