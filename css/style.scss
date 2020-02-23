@@ -1,0 +1,44 @@
+/* Base */
+$orbitron: 'Orbitron';
+@mixin font ($family, $size, $weight, $color) {
+	font-family: $family;
+	font-size: $size;
+	font-weight: $weight;
+	color: $color;
+}
+%hover-ease {
+	-webkit-transition: all .325s ease-in-out;
+  	-moz-transition: all .325s ease-in-out;
+  	-ms-transition: all .325s ease-in-out;
+  	transition: all .325s ease-in-out;
+}
+
+/* Global */
+* {
+    box-sizing: border-box;
+}
+.hidden {
+    display: none;
+}
+a, a:hover, a:visited, a:focus {
+    outline: 0 !important;
+    text-decoration: none !important;
+}
+input, button, textarea {
+    outline: none;
+    border: none;
+}
+
+/* Body */
+body {
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    background: #FFF;
+    color: #000000;
+    margin: 0;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+div.main-wrapper {
+    overflow: hidden;
+}
