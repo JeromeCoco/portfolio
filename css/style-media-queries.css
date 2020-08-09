@@ -1,0 +1,31 @@
+/* Mobile Styles */
+
+@media only screen and (max-width: 1449px) {
+
+}
+
+@media only screen and (max-width: 1369px) {
+
+}
+
+@media only screen and (max-width: 1199px) {
+
+}
+
+@media only screen and (max-width: 991px) {
+
+}
+
+@media only screen and (max-width: 767px) {
+    .coming-soon-wrapper .coming-soon-inner-wrapper .coming-soon-heading,
+    .coming-soon-wrapper .coming-soon-inner-wrapper .coming-soon-heading span {
+        font-size: 36px;
+    }
+    .coming-soon-wrapper .coming-soon-inner-wrapper .coming-soon-subheading {
+        font-size: 26px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+}

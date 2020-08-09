@@ -1,19 +1,37 @@
 /* Base */
+.coming-soon-wrapper .coming-soon-inner-wrapper .coming-soon-contact-details a {
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
 /* Global */
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
+
+*::selection {
+  background-color: #242424;
+  color: white;
+}
 
 .hidden {
-  display: none; }
+  display: none;
+}
 
 a, a:hover, a:visited, a:focus {
   outline: 0 !important;
-  text-decoration: none !important; }
+  text-decoration: none !important;
+  color: #000;
+}
 
 input, button, textarea {
   outline: none;
-  border: none; }
+  border: none;
+}
 
+/* Global ------ End */
 /* Body */
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -22,9 +40,65 @@ body {
   color: #000000;
   margin: 0;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body.hide-scroll {
+  overflow: hidden;
+}
 
 div.main-wrapper {
-  overflow: hidden; }
+  overflow: hidden;
+}
 
-/*# sourceMappingURL=style.css.map */
+/* Coming Soon */
+.coming-soon-wrapper {
+  font-size: 0;
+  position: relative;
+  height: 100vh;
+}
+.coming-soon-wrapper .coming-soon-inner-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+}
+.coming-soon-wrapper .coming-soon-inner-wrapper .coming-soon-heading {
+  font-family: "Orbitron", sans-serif;
+  font-size: 72px;
+  font-weight: 400;
+  color: #000;
+}
+.coming-soon-wrapper .coming-soon-inner-wrapper .coming-soon-heading span {
+  display: block;
+  font-family: "Orbitron", sans-serif;
+  font-size: 72px;
+  font-weight: 400;
+  color: #047cb1;
+  letter-spacing: 0.03em;
+}
+.coming-soon-wrapper .coming-soon-inner-wrapper .coming-soon-subheading {
+  font-family: "Orbitron", sans-serif;
+  font-size: 35px;
+  font-weight: 400;
+  color: #878787;
+  margin-top: 45px;
+}
+.coming-soon-wrapper .coming-soon-inner-wrapper .coming-soon-contact-details {
+  margin-top: 43px;
+}
+.coming-soon-wrapper .coming-soon-inner-wrapper .coming-soon-contact-details a {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 24px;
+}
+.coming-soon-wrapper .coming-soon-inner-wrapper .coming-soon-contact-details a:hover {
+  opacity: .5;
+}
+.coming-soon-wrapper .coming-soon-inner-wrapper .coming-soon-contact-details a img {
+  max-width: 100%;
+}
+
+/* Coming Soon ------ End */
